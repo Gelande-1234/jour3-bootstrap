@@ -13,7 +13,7 @@
         .navbar {
             display: flex;
             align-items: center;
-            background-color: red;
+            background-color:lightgray;
             padding: 10px;
         }
         .navbar a {
@@ -63,7 +63,7 @@
             padding: 6px 10px;
             margin-top: 8px;
             margin-right: 16px;
-            background: #ddd;
+            background:white;
             font-size: 17px;
             border: none;
             cursor: pointer;
@@ -75,17 +75,22 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="#allezcine" style="font-weight:bold;font-size:3em;">ALLEZCINE!</a>
-        <a href="#home">HOME</a>
+        <a href="#allezcine" style="font-weight:bold;font-size:3em;" style="color: white;"><span style="color: red;">ALLEZ</span>CINE!</a>
+        <a href="#home" style="color: red;">HOME</a>
         <div class="dropdown">
-            <a href="#genre">GENRE</a>
-            <a href="#contact">CONTACT</a>
-            <div class="dropdown-content">
-                <a href="#action">Action</a>
-                <a href="#comedy">Comedy</a>
-                <a href="#western">Western</a>
-                <a href="#fiction">Fiction</a>
-            </div>
+            <li class="nav-item dropdown" style="background-color:red;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                GENRE
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#" style="color: black;">Action</a></li>
+                  <li><a class="dropdown-item" href="#" style="color: black;">Comedy</a></li>
+                  <li><a class="dropdown-item" href="#" style="color: black;">Western</a></li>
+                  <li><a class="dropdown-item" href="#" style="color: black;">Fiction</a></li>
+                </ul>
+            </li>
+         <a href="#contact">CONTACT</a>
+
         </div>
         <div class="search-container">
             <input type="text" placeholder="Recherche..">
