@@ -17,6 +17,7 @@
             padding: 10px;
             
             
+            
         }
         .navbar a {
             color: white;
@@ -103,7 +104,7 @@
             width: 100%;
             height: 100%;
             height: 10vh;
-            z-index: -1; /* Place le carrousel en arrière-plan */
+            z-index: -1; 
         }
 
         .carousel-item {
@@ -113,18 +114,17 @@
         .carousel-item img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Assure que l'image couvre tout l'espace */
+            object-fit: cover; 
             opacity:0.5;
         }
-
-        .content {
-            position: relative;
-            z-index: 1; /* Place le contenu au-dessus du carrousel */
-            background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent pour le contenu */
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-            text-align: center;
+        .poster {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            text-align: center; 
+            z-index: 3;
         }
     
     </style>
@@ -168,7 +168,7 @@
             <img src="image-titanic.jpg" class="d-block w-100" alt="titanic";>
           </div>
           <div class="carousel-item";>
-            <img src="grey.jpg" class="d-block w-100" alt="other-woman";>
+            <img src="grey.jpg" class="d-block w-100" alt="grey";>
         </div>
         
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -179,7 +179,17 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-    </div>
+
+        <div class="poster">
+            <h1 class="subtitle" style="font-weight: bold;">LATEST <span style="color: red;">ON</span>LINE <span style="color: red;">MO</span>VIES</h1>
+            <p class="tagline" style="font-weight: bold;">IN SPACE NO ONE CAN HEAR YOU SCREAM.</p>
+            <a href="#" class="watch-button" style="color:white; background-color: red;">
+                <i class="fas fa-play"></i> 
+                WATCH TRAILER
+            </a>
+
+                
+        </div>
     
     
 
