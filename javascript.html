@@ -15,15 +15,13 @@
     <p>Appuie sur <strong>espace</strong> pour commencer</p>
     <div id="letter"></div>
     <p id="score">Score : 0</p>
-    <p id="timer">Temps restant : 30s</p>
+    <p id="timer">Temps restant : 15s</p>
     <p id="message"></p>
 
-    <audio id="correctSound" src="correct.mp3"></audio>
-    <audio id="wrongSound" src="wrong.mp3"></audio>
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            let score = 0, timeLeft = 30, gameActive = false, timerInterval;
+            let score = 0, timeLeft = 15, gameActive = false, timerInterval;
             const letterDiv = document.getElementById("letter"),
                   scoreDisplay = document.getElementById("score"),
                   timerDisplay = document.getElementById("timer"),
@@ -32,7 +30,8 @@
                   wrongSound = document.getElementById("wrongSound");
 
             function getRandomLetter() {
-                return "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[Math.floor(Math.random() * 26)];
+                let alphabet=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+                return alphabet[Math.floor(Math.random() *26)];
             }
 
             function startGame() {
