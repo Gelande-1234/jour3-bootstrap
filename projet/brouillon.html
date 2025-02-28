@@ -124,6 +124,21 @@
             z-index: 3;
             position: relative;
         }
+        .bottom-container {
+            position: relative;
+            background-color: red;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            z-index: 4;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top:-200px ;
+        }
+        .bottom-container p {
+        margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -174,13 +189,20 @@
         </button>
     </div>
     <div class="poster">
-        <h1 class="subtitle" style="font-weight: bold;">LATEST <span style="color: red;">ON</span>LINE <span style="color: red;">MO</span>VIES</h1>
-        <p class="tagline" style="font-weight: bold;">IN SPACE NO ONE CAN HEAR YOU SCREAM.</p>
+        <h1 class="subtitle" style="font-weight: bold; color:black;">LATEST <span style="color: red;">ON</span>LINE <span style="color: red;">MO</span>VIES</h1>
+        <p class="tagline" style="font-weight: bold; color:black;">IN SPACE NO ONE CAN HEAR YOU SCREAM.</p>
         <a href="#" class="watch-button" style="color:white; background-color: red;">
             <i class="fas fa-play"></i> 
             WATCH TRAILER
         </a>
     </div>
+    <div class="bottom-container">
+        <p>telephone:0465345691</p>
+        <a href="#" class="btn btn-danger" style="background-color: black;">Login</a>
+        <a href="#" class="btn btn-danger" style="background-color: black;">Register</a>
+        
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
-
+</html>
