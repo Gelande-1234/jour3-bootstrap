@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jour2</title>
+    <style>
+       .carre{
+        height: 100px;
+        width:100px;
+        background-color:green;
+        margin: 2px;
+       }
+       .cercle{
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        margin: 2px;
+        border-radius: 50%;
+
+       }
+       section:first-child div:nth-child(2){
+        display: flex;
+        justify-content:space-around;
+       }
+       section:nth-child(2) div:nth-child(2){
+        display: flex;
+        justify-content: space-around;
+        }
+    
+       section:first-child div:nth-child(2) div:nth-child(2){
+        background-image:url("imagej2.jpg");
+        background-size:cover;
+        background-position:center;
+        border-bottom:2px solid black;
+         }
+         section:nth-child(2) div:nth-child(2) div:nth-child(3){
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+         }
+
+</style>
+</head>
+<body>
+    <section>
+        <div>
+            <h2>justify-content</h2>
+        </div>
+        <div>
+            <div class="carre"></div>
+            <div class="carre"></div>
+            <div class="carre"></div>
+        </div>
+    </section>
+</body>
+<section>
+    <div>
+        <h2>justify-content</h2>
+    </div>
+    <div>
+        <div class="cercle"></div>
+        <div class="cercle"></div>
+        <div class="cercle"></div>
+    </div>
+</section>
+</html>
